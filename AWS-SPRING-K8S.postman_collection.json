@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "2a2d41b6-6895-465c-849d-cc48e30e1809",
+		"name": "AWS-SPRING-K8S",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LIST EMPLOYEES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SAVE EMPLOYEE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"Carlos\",\r\n    \"lastName\": \"Martinez\",\r\n    \"email\": \"c4rlosc7@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET EMPLOYEE BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE EMPLOYEE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
